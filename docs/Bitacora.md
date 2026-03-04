@@ -3,6 +3,8 @@
 **Nombre del estudiante:** _____________________________  
 ---
 
+Cuando acabes no olvides ayudarnos evaluando tu ⭐[experiencia](https://forms.office.com/r/US1LARPmec)⭐
+
 ## Tabla de Contenidos
 - [Etapa 1: Preparación del Ambiente](#etapa-1-preparación-del-ambiente)
 - [Etapa 2: Métricas Iniciales](#etapa-2-métricas-iniciales)
