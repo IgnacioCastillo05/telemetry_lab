@@ -29,8 +29,7 @@ Cuando acabes no olvides ayudarnos evaluando tu ⭐[experiencia](https://forms.o
 
 > _[Inserta aquí la imagen de la aplicación corriendo en /api/]_
 
-### 1.3. Observaciones y problemas encontrados
-
+### 1.3. Observaciones y problemas encontrados (opcional)
 ```
 
 
@@ -156,7 +155,7 @@ Ejemplo: uri, method, status, instance, job, etc.
 
 **Propósito:**
 ```
-¿Qué quieres analizar o mostrar? Menciona qué métrica(s) vas a mostrar
+¿Qué quieres analizar o mostrar? Menciona qué métrica(s) vas a usar
 
 
 ```
@@ -180,7 +179,7 @@ Consejo: Si usaste la interfaz de Grafana para crear el panel, puedes copiar la 
 - [ ] Logs
 - [ ] Otro: _____
 
-**Ajustes aplicados (colores, unidades, etc.):**
+**Otros ajustes aplicados (colores, unidades, etc.) (opcional):**
 ```
 
 
@@ -228,7 +227,7 @@ Consejo: Si usaste la interfaz de Grafana para crear el panel, puedes copiar la 
 - [ ] Logs
 - [ ] Otro: _____
 
-**Ajustes aplicados (colores, unidades, etc.):**
+**Otros ajustes aplicados (colores, unidades, etc.) (opcional):**
 ```
 
 
@@ -249,14 +248,6 @@ Consejo: Si usaste la interfaz de Grafana para crear el panel, puedes copiar la 
 ---
 
 ### 2.1.3. Análisis final del dashboard
-
-
-**¿Qué indicadores te parecerían útiles para detectar fallos antes de que afecten a los usuarios?**
-```
-
-
-
-```
 
 **¿Qué otros datos te gustaría visualizar si tuvieras más información disponible?**
 ```
@@ -296,23 +287,8 @@ Ejemplo: url_shortener_urls_created_total
 
 ```
 
-**5. ¿En qué punto del servicio tendría sentido capturarla?**
-```
-Ejemplo: Durante la creación de URLs, durante los accesos, etc.
-
-
-```
-
 ---
 
-### 2.2.2. Implementación de la métrica
-
-
-**Captura del endpoint `/actuator/prometheus` mostrando la nueva métrica:**
-
-> _[Inserta aquí la imagen del endpoint mostrando tu métrica]_
-
----
 
 ### 2.2.3. Visualización en Grafana
 
@@ -331,13 +307,14 @@ Ejemplo: Durante la creación de URLs, durante los accesos, etc.
 
 ```
 
-**3. ¿Qué información esperas ver en ese panel?**
+**3. ¿Cuál es el propósito de la visualización?**
 ```
 Provee una interpretación en palabras con el propósito de la visualización. Que te interesa ver en el panel?
 
 
 
 ```
+
 
 ---
 
@@ -385,14 +362,9 @@ Provee una interpretación en palabras con el propósito de la visualización. Q
 
 #### 3.2.1. Modificación del código
 
-**Endpoint o funcionalidad afectada:**
-```
-
-```
-
 **Descripción del ajuste realizado:**
 ```
-Ejemplo: Mejorar validaciones, ajustar lógica interna, refactorizar, etc.
+Describe en pocas palabras el ajuste realizado.
 
 
 
@@ -410,15 +382,6 @@ Ejemplo: Mejorar validaciones, ajustar lógica interna, refactorizar, etc.
 **Captura de pantalla del dashboard después del ajuste:**
 
 > _[Inserta aquí la imagen del estado del dashboard posterior al ajuste]_
-
-**Análisis del impacto:**
-```
-¿La latencia cambió? ¿Los errores disminuyeron? ¿Los logs muestran un comportamiento más estable?
-
-
-
-
-```
 
 ---
 
