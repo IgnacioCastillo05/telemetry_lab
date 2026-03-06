@@ -22,12 +22,24 @@ public class UrlShortenerService {
     private final Map<String, UrlMapping> urlStorage = new ConcurrentHashMap<>();
     private final Random random = new Random();
 
-    private final Counter dummyCounter;
+    private final Counter urlShortenedCounter;
+    private final Counter urlAccessedCounter;
+    private final Counter urlNotFoundCounter;
+    private final Counter customCodeConflictCounter;
 
     public UrlShortenerService(MeterRegistry meterRegistry) {
         logger.info("UrlShortenerService initialized with in-memory storage");
-        this.dummyCounter = Counter.builder("dummyCounter")
-                .description("dummy description")
+        this.urlShortenedCounter = Counter.builder("urlShortened")
+                .description("Counter for shortened URLs")
+                .register(meterRegistry);
+        this.urlAccessedCounter = Counter.builder("urlAccessed")
+                .description("Counter for accessed URLs")
+                .register(meterRegistry);
+        this.urlNotFoundCounter = Counter.builder("urlNotFound")
+                .description("Counter for not found URLs")
+                .register(meterRegistry);
+        this.customCodeConflictCounter = Counter.builder("customCodeConflict")
+                .description("Counter for custom code conflicts")
                 .register(meterRegistry);
     }
 
